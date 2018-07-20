@@ -1,0 +1,699 @@
+{
+  "settings": {
+    "name": "My Site",
+    "currentPage": "page4.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#4533ff"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [],
+    "versionFirst": "4.7.6",
+    "uniqCompNum": 29,
+    "versionPublish": "4.7.8",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    ".html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#7f1933"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/29887-1024x807.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">老莊經典文選課程 第1週</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>【課程內容摘要】\n<br>智者千慮必有一失，愚者千慮必有一得，「此處當知選佛場，人人皆是未來佛，增求上智親慧賢，惡習摒除心不鬱。」個性雖決定命運，但智慧能改變個性，讀書就是提升智慧與改變自己，「增上智」與「親近善智慧」兩者不能少，每一個人都是未來佛，你自己決定你一生的命運。 \n<br>「不要崇拜權威，要相信真理」，上課要有深入思考的態度，追問原因為何？有何證據？證據出自何處？古代書籍無標點符號，閱讀不容易，找一個好的老師，就近學習；要重視養生，三餐七分飽。 \n<br>人生要用選擇題方式來處理，人生千萬不要用批判的、要用欣賞的態度對待人，長得再醜的人對社都會有</b>貢<b>獻。」&nbsp;</b></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"0\" data-app-placeholder=\"Type Text\"></a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_anchor": "header2-j",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "qWUMBcLmv6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#7f1933"
+            },
+            ".card-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            課前概言\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>老師在東海大學教書50餘年，在社區大學也教了16-17年，老師不會開車、也不會騎機車，同學要我來生命線上課，上課沒問題，但要有人載我，因早期上課宿舍到教室只有5分鐘，不用交通工具，我今年81歲。\n<br>   上課地點是一個有思想的場所，在日本有一個禪宗佛寺，出家人都要上課，其建築物牆壁掛匾額:「選佛場」，教室就是選佛場，佛教教主釋迦牟尼佛，生前稱呼大光明—沒有稱佛，只有死後才有稱呼佛，表示這人一生的智慧、行為沒有缺點，才稱佛，人無論有多大的智慧，有可能死前也會做錯事，有兩句話可參考:\n<br>          智者千慮必有一失，\n<br>          愚者千慮必有一得，\n<br>   前句是說人無論智慧有多高，考慮非常多難免也會不足，發生錯誤後果有多嚴重，沒有人知道，後句是說天生智慧比較低的人，各種考慮中，必仍有一點值得採納的。\n<br>   佛教稱呼每一個人都是未來佛，你只是還沒有到人格最完美時，但你有想要讀書，想要改變自己，有一天就會成為完美的人。\n</b><br>\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            你自己決定你一生的命運\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>改變非常重要，老莊都非常強調改變，不想改變永遠停步，但改變不一定好，有可能改變愈來愈壞，老莊強調一個觀念:你自己決定你一生的命運，有人有錯誤的觀念:我天生的個性就是這樣，無法改! \n<br>西方哲學有一句:「個性決定命運」個性能不能改？「智慧改變個性」，有智慧的人會有方法改變個性，讀書就是告訴你很多方法。</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            與人相處重要原則，就是地位相同，平等對待。</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>大學教書期間，新生進來學校第一節就告訴他們一個觀念:「大學讀四年，若無法改變你的命運，大學是白讀的!」，曾與同學對話說:「你是我晚輩，為何聲音比我大聲」，講話要帶笑容，才會感覺很親切，很重要。\n<br>漢字是全世界最深的語言，同一個字，在周、漢、唐不同朝代，解釋就不一樣，同一個字，在不同區域意義就不同，讀文獻要了解其義，就要看它是在什麼時代，在什麼地區，發什麼音，音變成符號，同一個音，客家人與閩南音意思就不一樣，人無法同時了解各族群的語言發音，例如:「朋友」這兩字要如何解釋？友者，親也，親=近，互相接近，才能產生關係，論語:有朋自遠方來，這句「朋」原字是「倗」，是因古代人抄寫錯誤造成的，「倗」就是平等對待對方，自己不可有優越感，否則會傷到人家，「朋」字即是地位相等的人，\n<br>所以要與人相處在一起有個很重要原則，就是地位相同，平等對待。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features4-k",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "qWUMCHNhdA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#7f1933"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            佛教有兩個重要觀念:1.\t增上智. &nbsp;2.\t親近善智慧</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>今天有寫一首詩，與大家分享:\n<br>     此處當知選佛場，\n<br>     人人皆是未來佛，\n<br>     增求上智親慧賢，\n<br>     惡習摒除心不鬱。\n<br>佛教有兩個重要觀念:\n<br>1.\t增上智:任何時間、任何場所不要浪費生命，要提升自己的智慧，上課是增上智的一種方式，任何場所都可增上智，看到別人缺點，就知道我要改，此即是增上智。\n<br>2.\t親近善智慧:有機會多接近有學問、有品德的人，例如你們來上課即是親近善知識。不良思考與不良行為要改，若無法即時回答對方問題，要「沉默是金」，因為講錯話無法收回，何時沉默？何時不沉默？這要有非常高的智慧。\n<br>不好的習性最難改，習者，久也，即是長時間累積的生活方式，一下子能改需有毅力、有決心。學生說:「老師我明天才改」，這句話對不對？有智慧的人，當下、現在就改，拋棄不好習慣，心情就不會憂鬱。\n<br>人生下來就有缺點，人沒有天生完美的，能夠把惡習拿掉，就接近成佛，不可有任何理由把好的習慣切斷。\n<br>\n<br>荀子.榮辱篇:「人之生，固小人」\n<br>荀子認為人的本性原來存在著與生俱來的劣質性「唯利之見」的本性。\n<br>人要承認自己有缺點，注意自己缺點在哪裡，才有機會改進。\n<br>\n<br>我曾告訴學生:你來讀大學先訓練自己能不能專心聽老師講課，做得到你才是聰明人，什麼是「聰明」？人家講的話，你每一句都聽得很清楚，每一句話意思都聽懂，還能聽得懂他的表情。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            不要崇拜權威，要相信真理。</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>給同學一個觀念:「不要崇拜權威，要相信真理」，這人在某領域也許很權威，但有可能某句話講錯而不自知，都要思考!要思慮!\n<br>「思慮(考)」，「考」與「試」同義，調查之意，我出題目，你回答!就是要了解你對這題目了解到什麼程度!\n<br>「思」:是一種平面思想，例如:老師講一句話你就接受。\n<br>「慮」與「疑」同義: 就是深入去想!  「懷」疑: 內心深入去想。例如:老師講一句話，你會深入去想為甚麼？是什麼原因？有何證據？證據出自何處？\n<br>所以我講的每句話你們都要深入想想!有任何疑問與問題，任何時間包括上課，都可舉手發問，有可能我講錯或疏忽，才有糾正機會，我希望你們上課或聽演講要有這個態度。\n<br></b>\n<br><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            夫人，雖有性質美而心辯智，必將求賢師而事之</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp;荀子.性惡篇 \n<br>「夫人，雖有性質美而心辯智，必將求賢師而事之!」 \n<br>周朝兩大哲學家: \n<br>孟子—主張性善 \n<br>荀子---主張性惡 性，是天生的； 惡，是不好的。 \n<br>性惡篇第一句話:「偽者，人為也」，眾人皆知虛偽，「偽」之意？ \n<br>偽，人為，它不是天生的，是後天產生的，來自個人自私自利的心，為了自己的好處，違背良心。 \n<br>\n<br>司馬光家訓:「事無不可對人言」。 \n<br>司馬光做到宰相，非常有智慧，古人都會將很重要的觀念寫入家譜，做為子孫的指導，「訓」者，指導也，「事無不可對人言」做任何事情沒有不可以對別人說；人就是做錯事情，怕人家知道，為了保護自己，才會編理由說謊， \n</b><br><b>「怕人家知道」就不會改正錯誤。 \n<br>\n<br>「夫人」 \n<br>夫人的「夫」，是非常尊重的語氣，此人在我心目中非常有地位，古人認為人是天地之中最偉大的動物，動物中人的地位最高，以人為貴，人會思考、會改變。 \n<br>\n<br>「雖有性質美而心辯智」 \n<br>有--存在， 性質美—個性非常好 而---再加上 心—思想 \n<br>辯—分析 辯智—把事情分析的很清楚。 \n<br></b>\n<br><b>「必將求賢師而事之!」 \n<br>「必將」:一定要這樣做! \n<br>「求賢師」: 找一個好的老師 \n<br>「而事之」: 事，天天在一起工作。 \n<br>世界有名英國劍橋大學(包括日本東京大學.京都大學)，這些教授在世界上都非常有地位，讀博士班，需與指導教授生活在一起，觀察教授如何做學問、如何分析問題、如何作時間管理、如何安排讀書研究，生活在一起，就近學習，學習指導教授所作的一切規畫。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features4-l",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "qWUME6UUbx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            ".card-title": {
+              "color": "#7f1933"
+            },
+            "P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            人生論+養生論</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>不管我這課程講的多好，假使我生活習慣很不好，連自己都無法改變，何必跟這老師學習，我在東大教書從不參加應酬，會浪費時間生命，與書為伍，珍惜時間讀書。\n<br>日本有一本書:「人生論」，是說人生沒有多少理論，舉例說:大家都知道早晨空氣最新鮮，卻沒有幾個人早起來呼吸，都賴床。\n<br>中國漢朝一本有名書:「養生論」，中國醫學首重預防醫學，怎麼做才不生病，文中說:吃三餐不要太飽，即是吃七分飽；飽食，「飽」之意，食物吃太多，把身體都包起來，胃還沒消化又進入食物，怎能不生病!養生論稱為:膨脝，即是腹脹， 道家養生方法:斷穀，一週一日不吃，清空胃腸，讓身體有機會飢餓，「飢」者，有食物吃，但吃不飽，「餓」者，肚子空空，完全無食物可吃，所以吃食物原則，只要吃到適量即不吃，吃胖後要減肥都很困難。\n<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            老莊哲學\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>「老莊哲學」，「老莊」指老子、莊子；「學」即是理論；「哲」指睿智，特別有智慧，古代人稱特別有智慧的人稱哲人，思考範圍特別深入，「思考」能力是天生的，西方科學兩偉大人物:牛頓與艾因斯坦，同樣一顆蘋果掉下來，有的說運氣不好，牛頓卻思考為什麼會掉下來？找出「地心引力」原理，艾因斯坦是德國大學物理系畢業，在稅務處上班，25歲發表相對論，震撼科學界，死後解剖他的大腦，與常人並無不同、並無異常!這是天生的。\n<br>「老莊哲學」這課程，我曾在靜宜大學、社區大學開過課程，要完全弄懂不容易，到現在仍有部分不清楚，老莊經典留存下來的，其內容非常複雜，並非所想的這麼簡單，有可能是老莊的學生的，或其他人著作依附老莊名下，都已不可考，古代書籍無標點符號，閱讀不容易。\n<br>\n<br>「道可道非常道」。\n<br>這句話該如何解釋？句中「道」兩個字相同，但意思完全不一樣，「可」怎麼解釋？解釋為「可以」或「不可以」，都是錯的，我在學校研究所曾對研究生講:人生不可用是非、對錯來論，有時你認為對的，卻錯了，有時你認為錯的，卻對了，人生要用選擇題方式來處理，A的答案可能適合甲，B的答案可能適合乙，人生千萬不要用批判的態度對別人，要用欣賞的態度對待人，發現對方的優點，不看對方的缺點；一個長得醜的人對社會有否貢獻？他能彰顯別人的美，矮能彰顯對方的高，此即是老子講的:「有無相生，難易相成，長短相形，高下相傾---」。\n<br>\n<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>&nbsp; &nbsp; &nbsp; 【老莊與諮商的對話】 王治興資深督導 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ｢道可道非常道｣:老子以｢非常道｣揭示道是始終不斷地改變，非常強調改變。其與短期心理諮商焦點解決的中心主張人是可以改變的，小改變是大改變的第一步，所持觀點一致。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;故擔任協談員要有正面的態度，相信個案是有能力、做得到的，無條件接納案主的信念與價值，借助他過去成功經驗，幫助案主創造他所想要的改變；且從不把焦點放在案主應該做些什麼、不足之處，而是想辦法去發現他能自己做什麼，引導他找出例外，邀請案</b>主<b>做些不一樣的改變。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 荀子「夫人，雖有性質美而心辯智，必將求賢師而事之!」告示我們:協談生手宜實施個別督導，協談熟手則可試行同儕督導。因為再資深的督導、具有再強的協談技巧，也要經過督導才能漸漸精熟。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 同儕督導可藉由理論基礎的不一，提供不同的思辨觀點；在互相觀摩中，提供更客觀的處遇論點，促進個人專業成長，一起達到｢性質美而心辯智」。</b>&nbsp;<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features4-m",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "qWUMFVL6wi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "老莊經典第1週",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 2
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#7f1933"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/29887-1024x807.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">老莊經典文選課程 第1週</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>【課程內容摘要】\n<br>智者千慮必有一失，愚者千慮必有一得，「此處當知選佛場，人人皆是未來佛，增求上智親慧賢，惡習摒除心不鬱。」個性雖決定命運，但智慧能改變個性，讀書就是提升智慧與改變自己，「增上智」與「親近善智慧」兩者不能少，每一個人都是未來佛，你自己決定你一生的命運。 \n<br>「不要崇拜權威，要相信真理」，上課要有深入思考的態度，追問原因為何？有何證據？證據出自何處？古代書籍無標點符號，閱讀不容易，找一個好的老師，就近學習；要重視養生，三餐七分飽。 \n<br>人生要用選擇題方式來處理，人生千萬不要用批判的、要用欣賞的態度對待人，長得再醜的人對社都會有供獻。」&nbsp;</b></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"0\" data-app-placeholder=\"Type Text\"><span class=\"mbri-sun mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qWUCLKZMrA",
+          "_anchor": "header2-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#7f1933"
+            },
+            ".card-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            課前概言\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>老師在東海大學教書50餘年，在社區大學也教了16-17年，老師不會開車、也不會騎機車，同學要我來生命線上課，上課沒問題，但要有人載我，因早期上課宿舍到教室只有5分鐘，不用交通工具，我今年81歲。\n<br>   上課地點是一個有思想的場所，在日本有一個禪宗佛寺，出家人都要上課，其建築物牆壁掛匾額:「選佛場」，教室就是選佛場，佛教教主釋迦牟尼佛，生前稱呼大光明—沒有稱佛，只有死後才有稱呼佛，表示這人一生的智慧、行為沒有缺點，才稱佛，人無論有多大的智慧，有可能死前也會做錯事，有兩句話可參考:\n<br>          智者千慮必有一失，\n<br>          愚者千慮必有一得，\n<br>   前句是說人無論智慧有多高，考慮非常多難免也會不足，發生錯誤後果有多嚴重，沒有人知道，後句是說天生智慧比較低的人，各種考慮中，必仍有一點值得採納的。\n<br>   佛教稱呼每一個人都是未來佛，你只是還沒有到人格最完美時，但你有想要讀書，想要改變自己，有一天就會成為完美的人。\n</b><br>\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            你自己決定你一生的命運\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>改變非常重要，老莊都非常強調改變，不想改變永遠停步，但改變不一定好，有可能改變愈來愈壞，老莊強調一個觀念:你自己決定你一生的命運，有人有錯誤的觀念:我天生的個性就是這樣，無法改! \n<br>西方哲學有一句:「個性決定命運」個性能不能改？「智慧改變個性」，有智慧的人會有方法改變個性，讀書就是告訴你很多方法。</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            與人相處重要原則，就是地位相同，平等對待。</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>大學教書期間，新生進來學校第一節就告訴他們一個觀念:「大學讀四年，若無法改變你的命運，大學是白讀的!」，曾與同學對話說:「你是我晚輩，為何聲音比我大聲」，講話要帶笑容，才會感覺很親切，很重要。\n<br>漢字是全世界最深的語言，同一個字，在周、漢、唐不同朝代，解釋就不一樣，同一個字，在不同區域意義就不同，讀文獻要了解其義，就要看它是在什麼時代，在什麼地區，發什麼音，音變成符號，同一個音，客家人與閩南音意思就不一樣，人無法同時了解各族群的語言發音，例如:「朋友」這兩字要如何解釋？友者，親也，親=近，互相接近，才能產生關係，論語:有朋自遠方來，這句「朋」原字是「倗」，是因古代人抄寫錯誤造成的，「倗」就是平等對待對方，自己不可有優越感，否則會傷到人家，「朋」字即是地位相等的人，\n<br>所以要與人相處在一起有個很重要原則，就是地位相同，平等對待。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qWUCLMiiSu",
+          "_anchor": "features4-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#7f1933"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            佛教有兩個重要觀念\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>今天有寫一首詩，與大家分享:\n<br>     此處當知選佛場，\n<br>     人人皆是未來佛，\n<br>     增求上智親慧賢，\n<br>     惡習摒除心不鬱。\n<br>佛教有兩個重要觀念:\n<br>1.\t增上智:任何時間、任何場所不要浪費生命，要提升自己的智慧，上課是增上智的一種方式，任何場所都可增上智，看到別人缺點，就知道我要改，此即是增上智。\n<br>2.\t親近善智慧:有機會多接近有學問、有品德的人，例如你們來上課即是親近善知識。不良思考與不良行為要改，若無法即時回答對方問題，要「沉默是金」，因為講錯話無法收回，何時沉默？何時不沉默？這要有非常高的智慧。\n<br>不好的習性最難改，習者，久也，即是長時間累積的生活方式，一下子能改需有毅力、有決心。學生說:「老師我明天才改」，這句話對不對？有智慧的人，當下、現在就改，拋棄不好習慣，心情就不會憂鬱。\n<br>人生下來就有缺點，人沒有天生完美的，能夠把惡習拿掉，就接近成佛，不可有任何理由把好的習慣切斷。\n<br>\n<br>荀子.榮辱篇:「人之生，固小人」\n<br>荀子認為人的本性原來存在著與生俱來的劣質性「唯利之見」的本性。\n<br>人要承認自己有缺點，注意自己缺點在哪裡，才有機會改進。\n<br>\n<br>我曾告訴學生:你來讀大學先訓練自己能不能專心聽老師講課，做得到你才是聰明人，什麼是「聰明」？人家講的話，你每一句都聽得很清楚，每一句話意思都聽懂，還能聽得懂他的表情。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            不要崇拜權威，要相信真理。</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>給同學一個觀念:「不要崇拜權威，要相信真理」，這人在某領域也許很權威，但有可能某句話講錯而不自知，都要思考!要思慮!\n<br>「思慮(考)」，「考」與「試」同義，調查之意，我出題目，你回答!就是要了解你對這題目了解到什麼程度!\n<br>「思」:是一種平面思想，例如:老師講一句話你就接受。\n<br>「慮」與「疑」同義: 就是深入去想!  「懷」疑: 內心深入去想。例如:老師講一句話，你會深入去想為甚麼？是什麼原因？有何證據？證據出自何處？\n<br>所以我講的每句話你們都要深入想想!有任何疑問與問題，任何時間包括上課，都可舉手發問，有可能我講錯或疏忽，才有糾正機會，我希望你們上課或聽演講要有這個態度。\n<br></b>\n<br><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            夫人，雖有性質美而心辯智，必將求賢師而事之</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp;荀子.性惡篇 \n<br>「夫人，雖有性質美而心辯智，必將求賢師而事之!」 \n<br>周朝兩大哲學家: \n<br>孟子—主張性善 \n<br>荀子---主張性惡 性，是天生的； 惡，是不好的。 \n<br>性惡篇第一句話:「偽者，人為也」，眾人皆知虛偽，「偽」之意？ \n<br>偽，人為，它不是天生的，是後天產生的，來自個人自私自利的心，為了自己的好處，違背良心。 \n<br>\n<br>司馬光家訓:「事無不可對人言」。 \n<br>司馬光做到宰相，非常有智慧，古人都會將很重要的觀念寫入家譜，做為子孫的指導，「訓」者，指導也，「事無不可對人言」做任何事情沒有不可以對別人說；人就是做錯事情，怕人家知道，為了保護自己，才會編理由說謊， \n</b><br><b>「怕人家知道」就不會改正錯誤。 \n<br>\n<br>「夫人」 \n<br>夫人的「夫」，是非常尊重的語氣，此人在我心目中非常有地位，古人認為人是天地之中最偉大的動物，動物中人的地位最高，以人為貴，人會思考、會改變。 \n<br>\n<br>「雖有性質美而心辯智」 \n<br>有--存在， 性質美—個性非常好 而---再加上 心—思想 \n<br>辯—分析 辯智—把事情分析的很清楚。 \n<br></b>\n<br><b>「必將求賢師而事之!」 \n<br>「必將」:一定要這樣做! \n<br>「求賢師」: 找一個好的老師 \n<br>「而事之」: 事，天天在一起工作。 \n<br>世界有名英國劍橋大學(包括日本東京大學.京都大學)，這些教授在世界上都非常有地位，讀博士班，需與指導教授生活在一起，觀察教授如何做學問、如何分析問題、如何作時間管理、如何安排讀書研究，生活在一起，就近學習，學習指導教授所作的一切規畫。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qWUCLNSPAP",
+          "_anchor": "features4-c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            ".card-title": {
+              "color": "#7f1933"
+            },
+            "P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            人生論+養生論</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>不管我這課程講的多好，假使我生活習慣很不好，連自己都無法改變，何必跟這老師學習，我在東大教書從不參加應酬，會浪費時間生命，與書為伍，珍惜時間讀書。\n<br>日本有一本書:「人生論」，是說人生沒有多少理論，舉例說:大家都知道早晨空氣最新鮮，卻沒有幾個人早起來呼吸，都賴床。\n<br>中國漢朝一本有名書:「養生論」，中國醫學首重預防醫學，怎麼做才不生病，文中說:吃三餐不要太飽，即是吃七分飽；飽食，「飽」之意，食物吃太多，把身體都包起來，胃還沒消化又進入食物，怎能不生病!養生論稱為:膨脝，即是腹脹， 道家養生方法:斷穀，一週一日不吃，清空胃腸，讓身體有機會飢餓，「飢」者，有食物吃，但吃不飽，「餓」者，肚子空空，完全無食物可吃，所以吃食物原則，只要吃到適量即不吃，吃胖後要減肥都很困難。\n<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            老莊哲學\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>「老莊哲學」，「老莊」指老子、莊子；「學」即是理論；「哲」指睿智，特別有智慧，古代人稱特別有智慧的人稱哲人，思考範圍特別深入，「思考」能力是天生的，西方科學兩偉大人物:牛頓與艾因斯坦，同樣一顆蘋果掉下來，有的說運氣不好，牛頓卻思考為什麼會掉下來？找出「地心引力」原理，艾因斯坦是德國大學物理系畢業，在稅務處上班，25歲發表相對論，震撼科學界，死後解剖他的大腦，與常人並無不同、並無異常!這是天生的。\n<br>「老莊哲學」這課程，我曾在靜宜大學、社區大學開過課程，要完全弄懂不容易，到現在仍有部分不清楚，老莊經典留存下來的，其內容非常複雜，並非所想的這麼簡單，有可能是老莊的學生的，或其他人著作依附老莊名下，都已不可考，古代書籍無標點符號，閱讀不容易。\n<br>\n<br>「道可道非常道」。\n<br>這句話該如何解釋？句中「道」兩個字相同，但意思完全不一樣，「可」怎麼解釋？解釋為「可以」或「不可以」，都是錯的，我在學校研究所曾對研究生講:人生不可用是非、對錯來論，有時你認為對的，卻錯了，有時你認為錯的，卻對了，人生要用選擇題方式來處理，A的答案可能適合甲，B的答案可能適合乙，人生千萬不要用批判的態度對別人，要用欣賞的態度對待人，發現對方的優點，不看對方的缺點；一個長得醜的人對社會有否供獻？他能彰顯別人的美，矮能彰顯對方的高，此即是老子講的:「有無相生，難易相成，長短相形，高下相傾---」。\n<br>\n<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unique Styles\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qWUIOtJXXy",
+          "_anchor": "features4-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "meta_descr": "Web Site Generator Description",
+        "title": "老莊經典課程目錄",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><p><b>\n                    老莊經典文選課程目錄</b></p><br><p><b><br></b><b style=\"color: inherit; font-size: 3rem;\"><a href=\"https://pamisam.github.io/philosophy/indexl.html\" target=\"_blank\">第1週（7/03)&nbsp;</a></b></p><p><span style=\"color: inherit; font-size: 3rem;\"><b>&nbsp; &nbsp;</b></span></p><p><b>&nbsp;<a href=\"https://pamisam.github.io/philosophy02/indexl2.html\" target=\"_blank\">第2週（7/17)&nbsp;</a></b></p><br><p><b>&nbsp; 第3週（7/24)&nbsp;</b></p><br><p><b>&nbsp;第4週（7/31)&nbsp;</b></p><br><p><b>&nbsp;第5週（8/07)&nbsp;</b></p><br><p><b>&nbsp; 第6週（8/14)&nbsp;</b></p><br><p><b>&nbsp; 第7週（8/21)&nbsp;</b></p><br><p><b>&nbsp; 第8週（8/28)&nbsp;</b></p><br><p><b>&nbsp; 第9週（9/04)&nbsp;</b></p><br><p><b>&nbsp; 第10週（9/11)&nbsp;</b></p><br><p><b>&nbsp;第11週（9/18)&nbsp;</b></p><br><p><b>&nbsp; 第12週（9/25)&nbsp;</b></p><br><p><b>&nbsp; &nbsp; 第13週（10/02)&nbsp;</b></p><br><p><b>&nbsp; &nbsp;第14週（10/09)&nbsp;</b></p><br><p><b>&nbsp; &nbsp;第15週（10/16)&nbsp;</b></p><br><p><b>&nbsp; &nbsp; 第16週（10/23)&nbsp;<br></b><a href=\"https://pamisam.github.io/philosophy/indexl.html\" target=\"_blank\"><br></a><br><br><b><br></b></p></h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qXoNeuBdlg",
+          "_anchor": "content4-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page4.html": {
+      "settings": {
+        "title": "老莊經典文選課程 第2週",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 3
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#7f1933"
+            },
+            "H1": {
+              "color": "#4533ff"
+            },
+            ".mbr-text, .mbr-section-btn B": {
+              "color": "#ff3366"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/29887-1024x807.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">老莊經典文選課程 第2週</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>【課程內容摘要】<br>老子是個什麼樣的人？要了解一個人物，須先從其時代背景了解起；孔子「行仁」、孟子「重義」，不同時代，產生不同思想，思想是時代產物；人有三個層次: 一.理想性. 二.實踐性 三.合理性。21世紀存在主義:存在先於本質。去之驕氣與多欲，態色與淫志，是皆無益於子之身；三人行必有我師；作學問要有兩條件:一.誠實.二.謙虛 ；講話代表你的思想</b>，<b>智慧愈高</b>，<b>講話口氣愈溫和</b><b>；參 老萊子「嘴巴張開，握拳食指往嘴巴內比三下」是何意？&nbsp;</b><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"0\" data-app-placeholder=\"Type Text\"><span class=\"mbri-sun mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qYcVPHc5z8",
+          "_anchor": "header2-o",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#ff3366"
+            },
+            ".card-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            〔思想是時代產物〕\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>《孟子．萬章篇》：「讀其書，頌其詩，不知其人可乎？是以論其世也。」\n<br>【釋文】《孟子.萬章篇》說:要了解一個歷史人物，就必須先了解其時代背景，因思想是時代產物。\n</b><br><b><br></b><br><b>「讀其書，頌其詩」\n<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;讀其書，此「書」是指一個人所寫的書或幾句話，例如老子道德經都由幾句話組成的；頌其詩，「頌」是指唱，在周朝「詩」是可用歌唱的，周朝之後詩經的唱法就失傳，到漢代就不會唱了! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;何謂「詩」？民間歌謠也，周朝的民間歌謠稱為「國風」，「國」是指地區，「風」是老百姓所唱的歌。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; 要了解周朝的思想、情感，就要了解他們當時所唱的歌，漢朝把這些歌編起來稱為「詩經」. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在周朝沒有「詩經」這個名詞，在周朝稱詩三百，因一共有三百篇，周朝到漢朝經過甚多戰爭，很多文獻被破壞或遺失，歷代開國國君都會下令搜集整理各地區民俗文物風情，例有15地區就稱15國風。\n<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;民間歌謠皆是描述男女情感，男女情感是人類最基本情感，這是天生的，過去常</b><b>與學生講:男生愛女生、女生愛男生，是天經地義的.但古代社會男女不平等，男生愛女生是很正常，可是女生愛男生卻被視為不合社會道德。 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><b>但若去翻閱詩經，大部分都是女生向男生表達愛意，周朝15地區皆有民間歌謠，只有魯國這個地區沒有，所以沒有魯風. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;全世界各大民族(包括少數民族)男生表達對女生的愛意都是用唱歌的，若直接說:「我愛妳!」，這不是在表達情感愛意，這是在呼口號!男生在女生面前唱歌說:「我最近在野外打一隻鹿，我要把這隻鹿送給妳」，用這種方式在表達。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 魯國一篇民間歌謠都沒有，因為這地區道德性太強，因為魯國出現孔子與孟子，孔子的「論語」從未談男女情感，僅談人對國家情感，孟子也是如此，道德性太強區域老百姓都會壓制自己的情感，所以魯國這區域的百姓不敢用詩表達情感，就無法出現詩人，\n</b><br>\n<br><b>「不知其人可乎？是以論其世也。」\n<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; 不了解這個人，就不適合讀他的作品，因每個人性格與表達方式皆不同，為了了解這人物，就要先從他的時代背景去深入了解，因為思想是時代的產物，會有這個思想，是因在那個時代的因素。\n<br></b>\n<br><b>荀子.正論: 「知其然而不知其所以然，謂之性。」\n<br>「正論」--對某些事有非常精準的定義。\n<br>&nbsp; 了解這樣子，卻不知為何這樣子，這是天生的個性，意思是說同一件事會兩人以上不同的看法，荀子說這是天生的、這是正常的。</b>&nbsp;<br>\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            〔孔子「行仁」，孟子「重義」〕\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp;</b><b>孔子「行仁」，「仁」者，愛人也，愛就是關心，就是放棄自己的自私，去關心別人；孟子「重義」，「義」者，理也，即是合理的行為. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 孟子是繼承孔子的思想，不推「仁」卻推「義」，原因為何？孔子是春秋時期人，雖有戰爭但不多，但孟子身處戰爭時代，若說要「關心別人」，就會淪為口號，故孟子主張:你無法關心別人，至少不要去害人，所以說什麼樣的時代，就會產生什麼樣的思想。\n</b><br>\n<br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;人類最不合理的行為即是戰爭，戰爭是一群人來殺一群人，是不對的行為，戰爭會嚴重破壞人類道德、法律、經濟與社會和諧，惟一貢獻是加強人與人之間的文化快速交流，例北方戰爭，北方人逃亡到南方，南方戰爭，南方人逃亡到北方，會將文化帶到彼此對方。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; 台灣稱河洛人，有的稱閩南人，「河洛人」是指黃河.洛水這區域的人，是因周朝時期戰爭往南方逃，又碰到五胡之亂，又往南方逃，最後又跑到雲南地區，黃河洛水的人都是周朝貴族的人，能夠逃亡的都是貴族.有錢的人。 \n<br>\n<br>&nbsp; &nbsp; &nbsp; &nbsp; 日本學者曾研究何以孔子推行仁義道德？是因那時代仁義道德被破壞，若人人都有在做仁義道德，何須推行呢？&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><font color=\"#7f1933\"><b>〔存在主義: 存在先於本質〕</b></font></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>21世紀大思想學派「存在主義」，有一句經典語言:「存在先於本質」，意思是說:無論你先天「本質」多好，無論智慧、體能條件比別人好，假若你生在非洲，沒有受機會教育，甚至不認識字，這些「本質」對你而言都沒有用!不如身處在皇家環境，資質不一定比別人好，但就比別人更優渥，更有機會! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 「存在」就是指你身處在那一個環境。「先」就是比它更重要； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 「存在先於本質」之義是說: 你身處的環境比本人先天優越條件更重要。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp;當你了解什麼樣時代背景就會產生什麼樣的思想，假若這個思想離開那個時代，就會失去它的實踐性. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;人有三個層次: 一.理想性.二.實踐性三.合理性，想要做何事(理想性)，要具備什麼條件才能做到(實踐性)，做了之後合乎社會規範(合理性)嗎？例如:我要作黑社會老大，但於法就不可以(不合理)。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qYcVPHXlF4",
+          "_anchor": "features4-p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title B": {
+              "color": "#ff3366"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            〔老子是一個什麼樣的人？〕\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 史記.老子傳記載:「出生地:楚國. 苦縣. 勵鄉.仁里人， 姓李名耳，字伯陽，謚聃，周朝.守藏室之史。」\n<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 司馬遷是歷史學家，經過多方搜集，老子是楚國. 苦縣. 勵鄉.仁里人，「聃」耳朵很大謂之聃，有可能老子耳朵很大，稱李耳，他在周朝任職國家圖書館(守藏室) 館長，因之故，老子看的書就比別人多。\n</b><br>\n<br><b>孔子適周，問礼(禮)於老子。\n<br>【釋文】孔子前往周朝，向老子請教什麼是「礼」。\n<br>   「礼」者，理也、履也，思想要合理，依照合理的思想去實踐；「履」就是鞋子，實踐之義.「礼」是禮的原字，並非簡體字，周朝文字本來是簡單，會隨時代調整，發展到後代才較複雜，文字最早是符號，符號表達意義。\n</b><br>\n<br><b>「仁」者，漢朝.鄭玄注 : 仁者，二人偶。「偶」，結合之義。從二人開始的結合，漸漸產生夫妻、父子兄弟—等等關係慢慢擴展.擴大。&nbsp;<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            去之驕氣與多欲，態色與淫志，是皆無益於子之身</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp; &nbsp;老子曰:「去之驕氣與多欲，態色與淫志，是皆無益於子之身」。\n<br>【釋文】去除自以為了不起的個性及心中特別想要得到的東西，表情嚴肅，做超出個人的能力，這對你的生命都沒有幫助，反而有傷害。\n</b><br><b>「去」:離開之義。\n<br>「驕氣」:自以為了不起的個性。「驕」:自以為了不起。「氣」:天生的本質，\n<br>「多欲」: 古代的「多」與現代白話文的「多」，定義是不一樣的。\n<br>         「多」:特別之義，(解釋:非常多是錯的)，例:多情人，指情感特別豐富。\n<br>         「欲」:現代寫法:慾，心中想要得到。\n</b><br><b> 「與」:再加上。\n<br>&nbsp; &nbsp; &nbsp; &nbsp;孔子特別的慾望是什麼？要去週遊列國，要去勸各國國君不要打仗，這是孔子最偉大之處，知其不可為而為之，明知道去作不一定會成功，還是要去。\n</b><br>\n<br><b>「態色」:表情之義，「態」是姿態，「色」是現象，就是指與人講話的表情。\n<br>&nbsp; &nbsp; &nbsp; &nbsp;這極有可能孔子患了孟子所說的「人之大患，好為人師」，當老師角色久了之後表情太嚴肅!老子有觀察到才會提出表情要柔和。\n</b><br>\n<br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;在論語中，孔子向學生說:我天生的本質是中等，是靠後天努力學習而來的。\n<br>論語:「三人行必有我師」，「三」是指眾多，並不是指只有三個人，「眾」原字是: 众\n<br>「必」:絕對是；「師」:主也，領導。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; 在古代沒有照明設備，晚間用餐都是在太陽下山前，之後都會到外面飯後散步(稱:行食，古代養生法)，學生會藉此機會向老師問問題，孔子即時回答，事實上這是最好的教育方式. &nbsp; 孔子說:你們這些人在某方面是比我專業，可以領導我，可聽他的，所以說: 「三人行必有我師」。\n</b><br><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 作學問要有兩條件:一.誠實:不可欺騙自己與別人 ，二.謙虛:多聽聽別人不同的意見。\n<br>&nbsp; &nbsp; &nbsp; 論語中記載孔子學生樊遲問「農事(如何耕田)」，孔子回答:「我不知道!但可以給你一個建議，去問老農夫」，這就是非常誠實，不知為不知，是謂知。\n</b><br>\n<br><b>「淫志」: 「淫」之原義:下雨量太多(雨量超出人的需求)，延伸義:超過合理的行為，   \n<br>                       即超出個人的能力。\n<br>          「志」:心之所之。\n<br>\n<br>「是皆無益於子之身」: 這些對生命都沒有幫助。\n<br>「是」--現代用語:此時， 古代用語:是時   「身」--指生命。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            大任有身，生茲文王</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>「身軀」:台語音 \n<br>「軀」:是可看得到的肉體，能區分男女或老幼。 \n<br>「身」:原義是懷孕， \n<br>詩經分:1.大雅(描述周朝歷史內容). 2小雅(描述貴族生活). 3國風(描述老百姓男女情感) \n<br>其中大雅.大明篇:「大任有身，生茲文王」 \n<br>【釋文】名叫「大任」這個女人懷孕了，生下這個周文王。 \n<br>「大任」是周文王的母親名字。 \n<br>「文王」是周朝開國的國君。 \n<br>「茲」與「此」意思都一樣。 \n<br>「有身」--河洛語，指懷孕，「懷」指擁有。 「孕」原義指植的物種子。&nbsp;</b></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qYcVPJ4ECB",
+          "_anchor": "features4-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            "P": {
+              "color": "#232323"
+            },
+            ".card-title": {
+              "color": "#ff3366"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            智慧愈高，講話口氣愈溫和\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp; 從河洛語言哲學來看，智慧愈高，講話口氣愈溫和，智慧愈底，講話口氣愈粗重，例如:有人說這人講話很粗魯，漢朝的「孔子家語」書中，有解釋「粗魯」二字， 「粗」指大聲，「魯」指沒有經過思考。講話是代表你的思想，要讓人家接受你的思想，講話必溫和。\n                        </b></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            「嘴巴張開，握拳食指往嘴巴內比三下」是何意？\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp;先問大家「老子」二字如何解釋？後代畫老子像皆是畫白髮，實在是誤解，「老」是一個姓，姓孔稱孔子，姓孟稱孟子，他可能姓老故稱老子，在漢朝就有一個官員姓「老」，是老子的宗脈，此說法比較能接受。 \n</b><br>\n<br><b>&nbsp; &nbsp; &nbsp; &nbsp;史記又提到孔子也去見「老萊子」(有人認為「老萊子」可能就是老子)問禮，老萊子一句話都沒有講，僅嘴巴張開，握拳食指往嘴巴內比三下，孔子就明白了，子路問何意？孔子形容「老萊子」是見首不見尾，僅能看到他思想一部份，無法窺視全貌，中國畫龍僅畫龍首與雲，沒畫尾巴，其原由來自這裡；老萊子「嘴巴張開，握拳食指往嘴巴內比三下」是何意？各位回去想一想，下回分曉!&nbsp;</b></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><br>【<b>老莊與諮商的對話</b>】&nbsp;<b>王治興 資深督導</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>《孟子．萬章篇》：「讀其書，頌其詩，不知其人可乎？是以論其世也。」</b><br><b>\n<br>&nbsp; &nbsp; &nbsp; 這句話呼應了諮商的概念化技巧，它講求對個案形成概念及對問題形成概念。也就是要能認識個案的人格結構(如第一印象、個性特徵、情感特徵、生理特徵、靈性特徵等)、理解個案的問題背景(如主述問題、問題症狀之成因、家庭系統、社交系統等)，方能從個案一大堆雜訊中揀選出重要訊息，擬出有效的處理策略。\n</b><br><b><br>孔子適周，問礼(禮)於老子。老子曰:「去之驕氣與多欲，態色與淫志，是皆無益於子之身」。</b><br><b>\n<br>&nbsp; &nbsp; &nbsp;老子告誡孔子要｢去驕氣」，也就是不要自以為了不起，因為自以為了不起的人易於妄下論斷。｢去淫志」，也就不要做超出個人能力之外的事，呼應前面｢驕氣」二字，就是不要自以為十項全能、是專家，可以全部打包票。\n<br>&nbsp; &nbsp; &nbsp; &nbsp;</b><br><b>&nbsp; &nbsp; &nbsp; 這兩點警語在｢生命線義務工作人員須知」，也就是規範志工倫理的｢我們的禁忌」頭兩條:｢我們不是專家」、｢我們不是論斷者」即已涵蓋其意。\n</b><br><b><br>&nbsp; &nbsp; &nbsp; &nbsp; 此外，吳秀碧老師指出:生命線志工不在提供治療、運用策略改變當事人，而是在培養精熟之溝通和發展技巧，提供支持性服務。\n<br>&nbsp; &nbsp; &nbsp; </b><br><b>&nbsp; &nbsp; &nbsp; &nbsp;所以，面對超出我們能力所能處理之個案，可仿效「論語中記載孔子學生樊遲問『農事(如何耕田)』，孔子回答:我不知道!但可以給你一個建議，去問老農夫。」順理成章地提供個案轉介服務即可，實無須氣餒。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qYdjV4LYIH",
+          "_anchor": "features4-s",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
